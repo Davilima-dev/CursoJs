@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes JS</title>
+    <style>
+        div{
+            font: normal 100pt arial black;
+            background: red;
+            color: aliceblue;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        A
+    </div>
+    <script>
+        //mudar a cor da letra quando oassar o mouse por cima.
+        var a = window.document.getElementById('area')
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout',sair)
+        function entrar(){
+            a.style.color = 'yellow' //muda a cor para amarelo.
+        }
+        function sair(){
+            a.style.color = 'aliceblue' //muda a cor para padrão.
+        }
+    </script>
+</body>
+</html>
